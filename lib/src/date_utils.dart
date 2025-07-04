@@ -152,7 +152,9 @@ class DateUtils {
 
   /// Gets the difference in days between two dates
   static int differenceInDays(DateTime date1, DateTime date2) {
-    return date1.difference(date2).inDays;
+    final normalizedDate1 = DateTime(date1.year, date1.month, date1.day);
+    final normalizedDate2 = DateTime(date2.year, date2.month, date2.day);
+    return normalizedDate1.difference(normalizedDate2).inDays.abs();
   }
 
   /// Gets the difference in hours between two dates
