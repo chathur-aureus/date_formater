@@ -1,6 +1,6 @@
-# Date Formater Example App
+# Flutter Date Kit Example App
 
-A comprehensive Flutter example app that demonstrates all the features and capabilities of the `date_formater` package.
+A comprehensive Flutter example app that demonstrates all the features and capabilities of the `flutter_date_kit` package.
 
 ## 🚀 Getting Started
 
@@ -13,7 +13,7 @@ A comprehensive Flutter example app that demonstrates all the features and capab
 
 1. **Navigate to the example app directory:**
    ```bash
-   cd example_app
+   cd example
    ```
 
 2. **Get dependencies:**
@@ -28,7 +28,7 @@ A comprehensive Flutter example app that demonstrates all the features and capab
 
 ## 📱 App Features
 
-The example app demonstrates the following features of the `date_formater` package:
+The example app demonstrates the following features of the `flutter_date_kit` package:
 
 ### 1. **Date Formatting**
 - Various date formats (dd/MM/yyyy, yyyy-MM-dd, dd MMM yyyy, etc.)
@@ -107,7 +107,7 @@ To modify or extend the example app:
 ## 📚 Learning Resources
 
 This example app serves as a practical guide for:
-- Understanding how to use the `date_formater` package
+- Understanding how to use the `flutter_date_kit` package
 - Learning best practices for date handling in Flutter
 - Implementing date validation and parsing
 - Creating user-friendly date input interfaces
@@ -122,4 +122,4 @@ Feel free to contribute to the example app by:
 
 ## 📄 License
 
-This example app is part of the `date_formater` package and follows the same license terms. 
+This example app is part of the `flutter_date_kit` package and follows the same license terms. 

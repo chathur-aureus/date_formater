@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Date Formater Example App Runner
+# Flutter Date Kit Example App Runner
 # This script helps you run the example Flutter app
 
-echo "🚀 Date Formater Example App"
+echo "🚀 Flutter Date Kit Example App"
 echo "=============================="
 
 # Check if Flutter is installed
@@ -15,12 +15,12 @@ fi
 
 # Check if we're in the right directory
 if [ ! -f "pubspec.yaml" ]; then
-    echo "❌ Please run this script from the root directory of the date_formater package"
+    echo "❌ Please run this script from the root directory of the date_formatter package"
     exit 1
 fi
 
 # Navigate to example app
-cd example_app
+cd example
 
 echo "📱 Setting up example app..."
 
@@ -41,7 +41,7 @@ flutter devices
 
 echo ""
 echo "🎯 Running the example app..."
-echo "📱 The app will demonstrate all features of the date_formater package"
+echo "📱 The app will demonstrate all features of the date_formatter package"
 echo "🔄 Use 'r' to hot reload, 'R' to hot restart, 'q' to quit"
 echo ""
 
@@ -49,4 +49,4 @@ echo ""
 flutter run
 
 echo ""
-echo "👋 Thanks for trying the Date Formater example app!" 
+echo "👋 Thanks for trying the Flutter Date Kit example app!" 

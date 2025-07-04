@@ -1,6 +1,6 @@
 {
-    "name": "date_formater_example",
-    "short_name": "date_formater_example",
+    "name": "flutter_date_kit_example",
+    "short_name": "flutter_date_kit_example",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

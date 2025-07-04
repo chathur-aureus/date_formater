@@ -5,12 +5,11 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:flutter_date_kit_example/main.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:date_formater_example/main.dart';
-
 void main() {
-  testWidgets('Date Formatter Example', (WidgetTester tester) async {
-    await tester.pumpWidget(const DateFormaterExampleHome());
+  testWidgets('Flutter Date Kit Example', (WidgetTester tester) async {
+    await tester.pumpWidget(const DateFormatterExampleHome());
   });
 }

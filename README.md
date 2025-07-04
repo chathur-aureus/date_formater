@@ -1,6 +1,8 @@
-# Date Formater
+[![pub package](https://img.shields.io/pub/v/flutter_date_kit.svg)](https://pub.dev/packages/flutter_date_kit)
 
-A Flutter package that provides easy-to-use date formatting utilities using the [intl](https://pub.dev/packages/intl) package. This package offers a comprehensive set of date formatting methods, extension methods, and utility functions for DateTime objects.
+# Flutter Date Kit
+
+A comprehensive Flutter package that provides easy-to-use date formatting and manipulation utilities using the [intl](https://pub.dev/packages/intl) package. This package offers a complete toolkit of date formatting methods, extension methods, and utility functions for DateTime objects.
 
 ## ✨ Features
 
@@ -20,14 +22,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  date_formater: ^0.0.1
-```
-
-You'll also need to add the `intl` package as a dependency:
-
-```yaml
-dependencies:
-  intl: ^0.20.2
+  flutter_date_kit: ^latest
 ```
 
 ## 📁 File Structure
@@ -36,7 +31,7 @@ The package is organized into a modular structure for better maintainability:
 
 ```
 lib/
-├── date_formater.dart              # Main entry point (exports all components)
+├── flutter_date_kit.dart              # Main entry point (exports all components)
 └── src/
     ├── date_format_service.dart    # DateFormatService class with singleton pattern
     ├── date_time_extensions.dart   # DateTime extension methods
@@ -53,12 +48,12 @@ This structure provides:
 
 ## 📖 Usage
 
-> **💡 Tip**: Check out the [example app](example_app/) for a comprehensive demonstration of all features with a beautiful UI!
+> **💡 Tip**: Check out the [example app](example/) for a comprehensive demonstration of all features with a beautiful UI!
 > 
 > **🚀 Quick Start**: Run `./run_example.sh` to launch the example app directly!
 
 ```dart
-import 'package:date_formater/date_formater.dart';
+import 'package:flutter_date_kit/flutter_date_kit.dart';
 
 void main() {
   // Using the singleton instance (recommended for better performance)
@@ -91,7 +86,7 @@ void main() {
 ### Using Extension Methods (Most Convenient)
 
 ```dart
-import 'package:date_formater/date_formater.dart';
+import 'package:flutter_date_kit/flutter_date_kit.dart';
 
 void main() {
   final date = DateTime(2023, 12, 25, 14, 30, 45);
@@ -131,7 +126,7 @@ void main() {
 ### Using String Date Parsing and Formatting
 
 ```dart
-import 'package:date_formater/date_formater.dart';
+import 'package:flutter_date_kit/flutter_date_kit.dart';
 
 void main() {
   final formatter = DateFormatService.instance;
@@ -167,7 +162,7 @@ void main() {
 ### Using DateUtils for Advanced Operations
 
 ```dart
-import 'package:date_formater/date_formater.dart';
+import 'package:flutter_date_kit/flutter_date_kit.dart';
 
 void main() {
   // Current date and time utilities
@@ -220,7 +215,7 @@ void main() {
 ### Error Handling
 
 ```dart
-import 'package:date_formater/date_formater.dart';
+import 'package:flutter_date_kit/flutter_date_kit.dart';
 
 void main() {
   try {
@@ -348,7 +343,7 @@ void main() {
 
 The package is organized into several modules for better maintainability:
 
-- **`date_formater.dart`**: Main entry point with DateFormatService and extensions
+- **`flutter_date_kit.dart`**: Main entry point with DateFormatService and extensions
 - **`src/date_formats.dart`**: Date format patterns and pre-configured DateFormat instances
 - **`src/date_utils.dart`**: Utility functions for date manipulation and validation
 

@@ -1,3 +1,14 @@
+## 0.0.1+2
+
+### Package Rename
+- **BREAKING CHANGE**: Renamed package from `date_formatter` to `flutter_date_kit`
+- Updated all import statements to use new package name
+- Renamed main library file from `date_formatter.dart` to `flutter_date_kit.dart`
+- Updated example app to use new package name
+- Updated documentation and README with new package name
+- Updated GitHub repository URL to match new package name
+
+
 ## 0.0.1+1
 
 ### Bug Fixes and Improvements
@@ -9,7 +20,7 @@
 
 ### Initial Release
 
-🎉 Welcome to **date_formater** - A comprehensive Flutter package for easy and flexible date formatting!
+🎉 Welcome to **flutter_date_kit** - A comprehensive Flutter package for easy and flexible date formatting!
 
 #### ✨ Key Features
 
@@ -51,7 +62,7 @@
 #### 🚀 Getting Started
 
 ```dart
-import 'package:date_formater/date_formater.dart';
+import 'package:flutter_date_kit/flutter_date_kit.dart';
 
 // Format dates
 DateTime now = DateTime.now();

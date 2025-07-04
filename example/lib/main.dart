@@ -1,35 +1,35 @@
-import 'package:date_formater/date_formater.dart' as date_formater;
 import 'package:flutter/material.dart';
+import 'package:flutter_date_kit/flutter_date_kit.dart' as df;
 
 void main() {
-  runApp(const DateFormaterExampleApp());
+  runApp(const DateFormatterExampleApp());
 }
 
-class DateFormaterExampleApp extends StatelessWidget {
-  const DateFormaterExampleApp({super.key});
+class DateFormatterExampleApp extends StatelessWidget {
+  const DateFormatterExampleApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Date Formater Example',
+      title: 'Flutter Date Kit Example',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const DateFormaterExampleHome(),
+      home: const DateFormatterExampleHome(),
     );
   }
 }
 
-class DateFormaterExampleHome extends StatefulWidget {
-  const DateFormaterExampleHome({super.key});
+class DateFormatterExampleHome extends StatefulWidget {
+  const DateFormatterExampleHome({super.key});
 
   @override
-  State<DateFormaterExampleHome> createState() =>
-      _DateFormaterExampleHomeState();
+  State<DateFormatterExampleHome> createState() =>
+      _DateFormatterExampleHomeState();
 }
 
-class _DateFormaterExampleHomeState extends State<DateFormaterExampleHome> {
+class _DateFormatterExampleHomeState extends State<DateFormatterExampleHome> {
   late final DateTime sampleDate;
 
   /// Controller for the date input text field
@@ -60,7 +60,7 @@ class _DateFormaterExampleHomeState extends State<DateFormaterExampleHome> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Date Formater Example'),
+        title: const Text('Flutter Date Kit Example'),
         elevation: 2,
       ),
       body: SingleChildScrollView(
@@ -103,7 +103,7 @@ class _DateFormaterExampleHomeState extends State<DateFormaterExampleHome> {
                 const SizedBox(width: 12),
                 const Expanded(
                   child: Text(
-                    'Date Formater Package Demo',
+                    'Flutter Date Kit Package Demo',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
@@ -303,29 +303,29 @@ class _DateFormaterExampleHomeState extends State<DateFormaterExampleHome> {
       icon: Icons.build,
       children: [
         // Current date/time utilities
-        _buildFormatCard('Current Date (dd/MM/yyyy)',
-            date_formater.DateUtils.getCurrentDateDdMmYyyy()),
-        _buildFormatCard('Current Date (yyyy-MM-dd)',
-            date_formater.DateUtils.getCurrentDateYyyyMmDd()),
-        _buildFormatCard('Current Time (24h)',
-            date_formater.DateUtils.getCurrentTime24Hour()),
-        _buildFormatCard('Current Time (12h)',
-            date_formater.DateUtils.getCurrentTime12Hour()),
+        _buildFormatCard(
+            'Current Date (dd/MM/yyyy)', df.DateUtils.getCurrentDateDdMmYyyy()),
+        _buildFormatCard(
+            'Current Date (yyyy-MM-dd)', df.DateUtils.getCurrentDateYyyyMmDd()),
+        _buildFormatCard(
+            'Current Time (24h)', df.DateUtils.getCurrentTime24Hour()),
+        _buildFormatCard(
+            'Current Time (12h)', df.DateUtils.getCurrentTime12Hour()),
         // Leap year calculations
-        _buildFormatCard('Is 2024 Leap Year',
-            date_formater.DateUtils.isLeapYear(2024).toString()),
-        _buildFormatCard('Is 2023 Leap Year',
-            date_formater.DateUtils.isLeapYear(2023).toString()),
+        _buildFormatCard(
+            'Is 2024 Leap Year', df.DateUtils.isLeapYear(2024).toString()),
+        _buildFormatCard(
+            'Is 2023 Leap Year', df.DateUtils.isLeapYear(2023).toString()),
         // Days in month calculations
-        _buildFormatCard('Days in Feb 2024',
-            date_formater.DateUtils.daysInMonth(2024, 2).toString()),
-        _buildFormatCard('Days in Feb 2023',
-            date_formater.DateUtils.daysInMonth(2023, 2).toString()),
+        _buildFormatCard(
+            'Days in Feb 2024', df.DateUtils.daysInMonth(2024, 2).toString()),
+        _buildFormatCard(
+            'Days in Feb 2023', df.DateUtils.daysInMonth(2023, 2).toString()),
         // Date analysis utilities
         _buildFormatCard('Quarter of Sample Date',
-            'Q${date_formater.DateUtils.getQuarter(sampleDate)}'),
-        _buildFormatCard('Week of Year',
-            'Week ${date_formater.DateUtils.getWeekOfYear(sampleDate)}'),
+            'Q${df.DateUtils.getQuarter(sampleDate)}'),
+        _buildFormatCard(
+            'Week of Year', 'Week ${df.DateUtils.getWeekOfYear(sampleDate)}'),
       ],
     );
   }
