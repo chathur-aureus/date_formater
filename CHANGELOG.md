@@ -1,21 +1,3 @@
-## 0.0.1+2
-
-### Package Rename
-- **BREAKING CHANGE**: Renamed package from `date_formatter` to `flutter_date_kit`
-- Updated all import statements to use new package name
-- Renamed main library file from `date_formatter.dart` to `flutter_date_kit.dart`
-- Updated example app to use new package name
-- Updated documentation and README with new package name
-- Updated GitHub repository URL to match new package name
-
-
-## 0.0.1+1
-
-### Bug Fixes and Improvements
-- Fixed empty LICENSE file issue
-- Added comprehensive initial release documentation
-- Improved package metadata and descriptions
-
 ## 0.0.1
 
 ### Initial Release
