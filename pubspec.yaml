@@ -1,7 +1,7 @@
 name: flutter_date_kit
 description: "A Flutter package for easy date formatting using the intl package."
 version: 0.0.1
-publisher: chathur-aureus
+publish_to: https://pub.dev
 homepage: https://github.com/chathur-aureus/flutter_date_kit
 
 environment:
